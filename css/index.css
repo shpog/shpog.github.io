@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background: gold;
+    color: #000;
+}
+
+body {
+    background: #0a0a0a;
+
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 55px;
+    overflow: hidden;
+}
+
+header div {
+    position: relative;
+    /* 				padding:10px; */
+    background: none;
+    height: 55px;
+    transition: background 0.5s;
+}
+
+header div a img {
+    vertical-align: middle;
+    height: 30px;
+    transition: height 0.25s;
+    pointer-events: none;
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+}
+
+header div a:hover img {
+    height: 40px;
+}
+
+header div a:active img {
+    height: 30px;
+}
+
+header div button {
+    vertical-align: top;
+    background: none;
+    border: none;
+    height: 55px;
+    width: 55px;
+    font-size: 1.5em;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2000;
+    transition: font-size 0.25s;
+    cursor: pointer;
+}
+
+#menu:hover {
+    font-size: 1.75em;
+}
+
+#menu:active {
+    font-size: 1.25em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #000;
+    z-index: 1000;
+    max-width: 100%;
+
+    height: 100%;
+    transition: right 1s;
+    padding: 25px;
+    padding-top: 80px;
+    text-align: right;
+}
+
+nav a {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: font-size 0.25s;
+}
+
+nav a:hover {
+    font-size: 2.25em;
+}
+
+nav a:active {
+    font-size: 1.75em;
+}
+
+#banner {
+    padding: 25px;
+    padding-top: 55px;
+    background: linear-gradient(45deg, #150029, #5f00b8);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+#banner img {
+    transition: height 1s;
+    pointer-events: none;
+}
+
+#banner>div {
+    vertical-align: middle;
+}
+
+#bannerdesc {
+    text-align: right;
+    padding: 50px 25px;
+}
+
+#bannerdesc h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#bannerdesc h2,
+h3 {
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bannerdesc a {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    background: #fff;
+    color: #150029;
+    border-radius: 15px;
+    transition: font-size 0.25s;
+}
+
+#bannerdesc a:hover {
+    font-size: 1.25em;
+}
+
+#bannerdesc a:active {
+    background: #150029;
+    color: #fff;
+}
+
+#bannerdesc img {
+    width: 4em;
+    vertical-align: bottom;
+}
+
+
+#bannerimage {
+    padding-left: 20px;
+    font-size: 0;
+    transition: height 1s, opacity 1s;
+}
+
+#links1 {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    font-size: 2em;
+}
+
+#links1 a {
+    display: block;
+    margin-top: 10px;
+    transition: font-size 0.25s;
+}
+
+#links1 a:hover {
+    font-size: 1.25em;
+}
+
+#links1 a:active {
+    font-size: 0.75em;
+}
+
+
+
+.desc {
+    text-align: center;
+    padding: 25px;
+}
+
+.desc>div {
+    display: inline-block;
+    text-align: left;
+    padding: 25px;
+    font-weight: 300;
+}
+
+.desc h2 {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+#about-blog {
+    margin-top: 25px;
+}
+
+#tech-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+#tech-flex .fa-li {
+    font-size: 1.75em;
+    vertical-align: top;
+}
+
+#tech-flex .fa-li i {
+    vertical-align: top;
+}
+
+#tech-flex li {
+    padding: 15px;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#tech-flex li>span {
+    color: lightgray;
+    display: block;
+}
+
+#tech-flex .npm i {
+    color: red;
+}
+
+#tech-flex .node i {
+    color: green;
+}
+
+#tech-flex .js i {
+    color: gold;
+}
+
+#tech-flex .html i {
+    color: orangered;
+}
+
+#tech-flex .css i {
+    color: #1E90FF;
+}
+
+#tech-flex .sass i {
+    color: #EE82EE;
+}
+
+#tech-flex .less i {
+    color: #4682B4;
+}
+
+#tech-flex .unity i {
+    color: #808080;
+}
+
+#tech-flex .php i {
+    color: #6A5ACD;
+}
+
+#tech-flex .git i {
+    color: orangered;
+}
+
+#tech-flex .py img,
+#tech-flex .csh img,
+#tech-flex .cpp img {
+    width: 1em;
+    vertical-align: top;
+    position: relative;
+    top: -0.1em;
+}
+
+#tech-flex .csh img {
+    width: 0.9em;
+}
+
+#tech-flex .pwa img {
+    vertical-align: top;
+    width: 1.5em;
+    position: relative;
+    top: 0.15em;
+    left: 5px;
+}
+
+#tech-flex img {
+    pointer-events: none;
+}
+
+
+
+#tech-flex ul {
+    list-style: none;
+    width: 25%;
+    padding-top: 15px;
+    padding-right: 5%;
+}
+
+#tech-flex ul:last-child {
+    padding-right: 0;
+}
+
+
+#projects {
+    padding: 0;
+}
+
+#projects h2 {
+    margin-left: 20px;
+}
+
+#projects>div>p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    color: #150029;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: font-size 0.25s;
+    font-weight: 400;
+}
+
+.button:hover {
+    font-size: 1.05em;
+}
+
+.button:active {
+    background: #150029;
+    color: #fff;
+}
+
+#git-projects {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+#git-projects>div {
+    vertical-align: top;
+    min-width: 30%;
+}
+
+#git-projects>div>div {
+    vertical-align: top;
+    margin: 10px;
+    padding: 30px;
+    background: #141414;
+    border-radius: 20px;
+}
+
+#git-projects .fork {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.65em;
+}
+
+#git-projects h3 {
+    margin-bottom: 10px;
+}
+
+#git-projects a {
+    text-decoration: none;
+    transition: font-size 0.25s;
+}
+
+#git-projects a:hover {
+    font-size: 1.05em;
+}
+
+#git-projects a:active {
+    font-size: 1em;
+}
+
+#git-projects .langs {
+    display: inline-block;
+    vertical-align: middle;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#git-projects p {
+    color: lightgray;
+}
+
+#git-projects p:last-child {
+    height: 3.5em;
+}
+
+#git-projects .project-links {
+
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5em;
+    margin: 0 10px;
+    margin-top: 35px;
+    font-weight: thin;
+}
+
+#git-projects .project-links:hover {
+    font-size: 1.75em;
+}
+
+#git-projects .project-links:active {
+    font-size: 1.25em;
+}
+
+
+
+#contact div {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#contact div p {
+    margin-bottom: 25px;
+}
+
+#links2 {
+    font-size: 2em;
+    overflow: hidden;
+    height: 2em;
+}
+
+#links2 a {
+    vertical-align: top;
+    margin: 0 5%;
+    transition: font-size 0.25s;
+}
+
+#links2 a:hover {
+    font-size: 1.25em;
+}
+
+#links2 a:active {
+    font-size: 0.75em;
+}
+
+
+
+footer {
+    background: #000;
+    height: 280px;
+    overflow: hidden;
+}
+
+#footername {
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 0;
+}
+
+#footername p {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+#footernav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footernav>div {
+    padding: 25px;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+#footernav>div>a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    transition: font-size 0.25s;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footernav>div>a:hover {
+    font-size: 1.25em;
+}
+
+#footernav>div>a:active {
+    font-size: 0.75em;
+}
+
+#footernav>div:nth-child(2n+1) {
+    text-align: right;
+}
+
+#footernav>div:nth-child(2n) {
+    text-align: left;
+}
+
+@media screen and (max-width:899px) {
+    #bannerdesc h1 {
+        font-size: 4em;
+    }
+
+    .desc>div {
+        width: 95%;
+    }
+
+    nav {
+        min-width: 70%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #bannerdesc h1 {
+        font-size: 6em;
+    }
+
+    .desc>div {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    nav {
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #tech-flex ul {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    nav {
+        min-width: 25%;
+    }
+}
