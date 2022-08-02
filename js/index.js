@@ -7,6 +7,8 @@ function resize() {
 window.onresize = e => { resize() }
 resize()
 
+document.querySelector('#bannerimage img').style.filter = 'grayscale(0%)'
+
 setInterval(e => {
     if (window.scrollY > (window.innerHeight / 3)) {
         document.querySelector('header div').style.background = '#000'

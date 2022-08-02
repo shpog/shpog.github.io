@@ -10,7 +10,8 @@
 }
 
 *::selection {
-    background: gold;
+/*     background: gold; */
+		background:#ff474e;
     color: #000;
 }
 
@@ -117,7 +118,9 @@ nav a:active {
 #banner {
     padding: 25px;
     padding-top: 55px;
-    background: linear-gradient(45deg, #150029, #5f00b8);
+		background: linear-gradient(50deg, #140000, #e00007);
+/*     background: linear-gradient(45deg, #290001, #e00007); */
+/*     background: linear-gradient(45deg, #150029, #5f00b8); */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -131,8 +134,9 @@ nav a:active {
 }
 
 #banner img {
-    transition: height 1s;
+    transition: height 1s, filter 5s;
     pointer-events: none;
+/* 		filter:grayscale(100%); */
 }
 
 #banner>div {
@@ -231,9 +235,16 @@ h3 {
     margin-bottom: 20px;
 }
 
+#about h2{
+	padding-top:1em;
+}
 
 #about-blog {
     margin-top: 25px;
+}
+
+#skills h2{
+	padding-top:1em;
 }
 
 #tech-flex {
@@ -345,10 +356,12 @@ h3 {
 
 
 #projects {
+		
     padding: 0;
 }
 
 #projects h2 {
+		padding-top:2em;
     margin-left: 20px;
 }
 
@@ -385,6 +398,7 @@ h3 {
     display: flex;
     align-items: top;
     flex-wrap: wrap;
+		justify-content:center;
 }
 
 #git-projects>div {
@@ -460,7 +474,12 @@ h3 {
     font-size: 1.25em;
 }
 
-
+#profile-image{
+	border-radius:100%;
+	margin-bottom:1em;
+	margin-top:2em;
+	max-width:100%;
+}
 
 #contact div {
     text-align: center;
@@ -587,6 +606,10 @@ footer {
     #tech-flex ul {
         width: 100%;
     }
+
+		#git-projects>div{
+			width: 100%;
+		}
 }
 
 
