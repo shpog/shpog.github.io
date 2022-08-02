@@ -51,6 +51,7 @@ fetch('https://api.github.com/users/shpog/repos')
         let e = document.querySelector('#git-projects')
         e.innerHTML = ''
         for (let i of r) {
+						if(i.name != 'shpog'){
             fetch(i.languages_url)
                 .then(_langs => _langs.json())
                 .then(_langs => {
@@ -84,5 +85,6 @@ fetch('https://api.github.com/users/shpog/repos')
 </div>
 `
                 })
+						}
         }
     })
