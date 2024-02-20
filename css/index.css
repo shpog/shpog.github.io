@@ -260,13 +260,14 @@ h3 {
     flex-wrap: wrap;
     font-size: 1em; */
     display: inline-block;
-    min-width: 50%;
+    /* min-width: 45%; */
+    margin: 5px;
     padding: 5%;
 
     border-radius: 20px;
     background:gold;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 
