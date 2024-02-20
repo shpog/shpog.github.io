@@ -247,6 +247,11 @@ h3 {
 	padding-top:1em;
 }
 
+#tech-flex{
+    padding-top: 15px;
+
+}
+
 #tech-flex > div{
     /* display: -webkit-box;
     display: -webkit-flex;
@@ -255,6 +260,12 @@ h3 {
     flex-wrap: wrap;
     font-size: 1em; */
     display: inline-block;
+    width: 25%;
+    padding-right: 5%;
+    padding-top: 5px;
+
+    border-radius: 20px;
+    background:gold;
 }
 
 
