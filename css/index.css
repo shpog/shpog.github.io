@@ -261,10 +261,13 @@ h3 {
 
 #tech-flex > div{
     margin: 5px;
-    /* padding: 75px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 400px;
     max-width:100%;
-    /* height: 200px; */
     aspect-ratio : 1 / 1;
 
     border-radius: 20px;
@@ -282,8 +285,8 @@ h3 {
 
 #tech-flex > div > i,
 #tech-flex > div > img {
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
 }
 
 
