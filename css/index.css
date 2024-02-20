@@ -263,7 +263,7 @@ h3 {
     display: inline-block;
     /* min-width: 45%; */
     margin: 5px;
-    padding: 5%;
+    padding: max(50px,25%);
 
     border-radius: 20px;
     background:gold;
