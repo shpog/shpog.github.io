@@ -282,6 +282,7 @@ h3 {
 
 #tech-flex > div > i,
 #tech-flex > div > img {
+    display: block;
     margin: auto;
 }
 
