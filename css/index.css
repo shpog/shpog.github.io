@@ -105,6 +105,7 @@ nav a {
     font-size: 2em;
     margin-bottom: 10px;
     transition: font-size 0.25s;
+    width:50%;
 }
 
 nav a:hover {
