@@ -263,11 +263,15 @@ h3 {
     display: inline-block;
     /* min-width: 45%; */
     margin: 5px;
-    padding: min(50px,10%);
+    /* padding: min(50px,10%); */
+    width: 200px;
+    height: 200px;
 
     border-radius: 20px;
     background:gold;
+
     text-align: center;
+    vertical-align: middle;
     font-size: 150px;
 }
 
