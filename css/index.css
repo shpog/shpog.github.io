@@ -247,14 +247,28 @@ h3 {
 	padding-top:1em;
 }
 
-#tech-flex {
-    display: -webkit-box;
+#tech-flex > div{
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1em;
+    font-size: 1em; */
+    display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #tech-flex .fa-li {
     font-size: 1.75em;
@@ -353,6 +367,24 @@ h3 {
 #tech-flex ul:last-child {
     padding-right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #projects {
