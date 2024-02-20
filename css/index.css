@@ -261,9 +261,10 @@ h3 {
 
 #tech-flex > div{
     margin: 5px;
-    padding: 75px;
-    /* width: 200px;
-    height: 200px; */
+    /* padding: 75px; */
+    width: 200px;
+    /* height: 200px; */
+    aspect-ratio : 1 / 1;
 
     border-radius: 20px;
     background:gold;
