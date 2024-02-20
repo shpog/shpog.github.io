@@ -250,7 +250,11 @@ h3 {
 #tech-flex{
     padding-top: 15px;
     text-align: center;
-
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #tech-flex > div{
@@ -260,7 +264,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     font-size: 1em; */
-    display: inline-block;
+    /* display: inline-block; */
     /* min-width: 45%; */
     margin: 5px;
     /* padding: min(50px,10%); */
