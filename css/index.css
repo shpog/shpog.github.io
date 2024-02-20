@@ -269,10 +269,15 @@ h3 {
 
     border-radius: 20px;
     background:gold;
-
-    text-align: center;
-    vertical-align: middle;
     font-size: 150px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
