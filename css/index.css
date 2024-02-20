@@ -85,7 +85,7 @@ header div button {
 nav {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     background: #000;
     z-index: 1000;
     max-width: 100%;
