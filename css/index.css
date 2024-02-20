@@ -255,17 +255,11 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
 }
 
 #tech-flex > div{
-    /* display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1em; */
-    /* display: inline-block; */
-    /* min-width: 45%; */
     margin: 5px;
     /* padding: min(50px,10%); */
     width: 200px;
