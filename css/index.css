@@ -271,13 +271,18 @@ h3 {
     background:gold;
     font-size: 150px;
 
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+}
+
+#tech-flex > div > i,
+#tech-flex > div > img {
+    margin: auto;
 }
 
 
